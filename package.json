@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch db.json --port 3000"
+    "start": "json-server --watch db.json --port 10000"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/yatri-vyas/blog-project-backend#readme",
   "dependencies": {
-    "json-server": "^0.17.4"
+   "json-server": "0.17.4"
   }
 }
