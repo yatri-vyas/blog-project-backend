@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "name": "yatri vyas",
+      "email": "yatrivvyas24@gmail.com",
+      "password": "2401",
+      "role": "user",
+      "id": "QVbI8OuSqlg"
+    },
+    {
+      "id": "1",
+      "name": "Yatri",
+      "email": "yatri@gmail.com",
+      "password": "123456",
+      "role": "admin"
+    },
+    {
+      "name": "prachi",
+      "email": "prachi@gmail.com",
+      "password": "1234",
+      "role": "user",
+      "id": "KAWP1-U9WOM"
+    }
+  ],
+  "blogs": [
+    {
+      "title": "Ut lorem suscipit po",
+      "description": "Aliquam ut possimus",
+      "category": "Tech",
+      "authorId": "QVbI8OuSqlg",
+      "authorName": "yatri vyas",
+      "date": "5/9/2026",
+      "id": "ZipyJ3FVlls"
+    },
+    {
+      "title": "Iure laudantium qui",
+      "description": "Non aliquid perspici",
+      "category": "Education",
+      "authorId": "KAWP1-U9WOM",
+      "authorName": "prachi",
+      "date": "5/9/2026",
+      "id": "d1AnBYNhslo"
+    },
+    {
+      "title": "Sed sunt officiis om",
+      "description": "Qui perspiciatis be",
+      "category": "Food",
+      "authorId": "KAWP1-U9WOM",
+      "authorName": "prachi",
+      "date": "5/9/2026",
+      "id": "KfhGrzvX11U"
+    },
+    {
+      "title": "Exercitationem moles",
+      "description": "Quam sint possimus",
+      "category": "Education",
+      "authorId": "1",
+      "authorName": "Yatri",
+      "date": "5/9/2026",
+      "id": "jS_U2vTmJZI"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
