@@ -17,6 +17,13 @@ app.get('/users', (req, res) => {
   res.json(db.users);
 });
 
+app.get('/users/:id', (req, res) => {
+  const db = readDB();
+  const user = db.users.find(u => u.id === req.params.id);
+  if (!user) return res.status(404).json({ message: "User not found" });
+  res.json(user);
+});
+
 app.post('/users', (req, res) => {
   const db = readDB();
   const newUser = { ...req.body, id: Date.now().toString() };
@@ -31,6 +38,13 @@ app.get('/blogs', (req, res) => {
   res.json(db.blogs);
 });
 
+app.get('/blogs/:id', (req, res) => {
+  const db = readDB();
+  const blog = db.blogs.find(b => b.id === req.params.id);
+  if (!blog) return res.status(404).json({ message: "Blog not found" });
+  res.json(blog);
+});
+
 app.post('/blogs', (req, res) => {
   const db = readDB();
   const newBlog = { ...req.body, id: Date.now().toString() };
@@ -42,6 +56,7 @@ app.post('/blogs', (req, res) => {
 app.put('/blogs/:id', (req, res) => {
   const db = readDB();
   const index = db.blogs.findIndex(b => b.id === req.params.id);
+  if (index === -1) return res.status(404).json({ message: "Blog not found" });
   db.blogs[index] = { ...db.blogs[index], ...req.body };
   writeDB(db);
   res.json(db.blogs[index]);
